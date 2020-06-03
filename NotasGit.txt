@@ -51,6 +51,32 @@ git checkout 48484gfs4e8w4e8	//clave del commit, se consulta en el log
 	en el commit al que viajamos
 git checkout master	//Regresar al ultimo commit realizado
 
+RESET!
+head		//status actual del proyecto, donde hicimos el ultimo salto o checkout
+master		//ultimo commit realizado
+reset		//saltos como los checkout pero borran a su paso
+	-Reset soft: git reset --soft <id_commit>
+	Deja el commit, indicado en el comando, como último SIN modificar el proyecto. El commit indicado ahora se convierte en el master, borra los commits posteriores
+	-Reset hard: git reset --hard <id_commit>
+	Deja el commit, indicado en el comando, como último modificando el proyecto con las características de dicho commit.
+
+Ramas
+-Espacios paralelos dentro de un mismo repositorio
+-Cuando se crea una rama a partir de otra se crea en conjunto con los commits que ya tiene. Crea la rama conn todos los commits de master
+git branch	//ver las ramas del repositorio
+git branch NombreRama	//crear nueva rama
+git checkout pruebas	//posicionarnos en otra rama
+
+
+
+
+
+
+
+
+
+
+
 
 
 
