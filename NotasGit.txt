@@ -24,14 +24,32 @@ git config --global user.email		//ver correo registrado
 Tres áreas,secciones o arboles en Git 
 -Directorio de trabajo o working área	//Donde estan alojados los archivos del proyecto del cual haremos ese folder un repositorio
 -Index	//agregar archivos del repositorio al index. Si un archivo no esta agregado a esta zona GIT no podra saber que hubo cambios en el Todos los archivossimpre deben estar en el index
--Git área	//alberga el ultimo commit echo actual del proyecto. El último punto de guardado
+-Head área	//alberga el ultimo commit echo actual del proyecto. El último punto de guardado
 
-Crear repositorio local
+Crear repositorio local y subir archivos
 Desde el bash nos colocamos en la carpeta deseada de nuestra PC
 git init	//Crea un repositorio local
 git status	//Ver el status del repositorio
 -Untracked files	//Archivos no traqueados, Archivos que NO han sido subidos al index área
-git add Notas Git.txt
+git add NotasGit.txt	//Agregar archivos al index área. Los nombres de archivos no deben llevar espacios
+git add -A		//Agregar todos los archivos de un directorio al index área
+git rm --cached NotasGit.txt	//Quitar un archivo del index área
+
+Commits
+Punto de salvado al cual podremos regresar a ese punto del proyecto cuando queramos
+git commit -m "Slider y foto de perfil"	//Hacer commmit y agregar un mensaje que lo describa 
+git log		//consultar la lista de commits que se ha hecho al repositorio
+Pasos para realizar un commit despues de un cambio:
+	git status	//ver que archivos fueron modificados
+	git add index.html	//agregar los archivos modificados al repositorio
+	git commit -m "Se realizaron cambios"	//Hacer commit
+	git log
+	
+Viajar a un commit o una rama en el repositorio
+git checkout 48484gfs4e8w4e8	//clave del commit, se consulta en el log
+	Abrimos el archivo o actulizamos el navegador y se vera el proyecto como estaba
+	en el commit al que viajamos
+git checkout master	//Regresar al ultimo commit realizado
 
 
 
