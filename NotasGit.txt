@@ -63,12 +63,14 @@ reset		//saltos como los checkout pero borran a su paso
 Ramas
 -Espacios paralelos dentro de un mismo repositorio
 -Cuando se crea una rama a partir de otra se crea en conjunto con los commits que ya tiene. Crea la rama conn todos los commits de master
-git branch	//ver las ramas del repositorio
-git branch NombreRama	//crear nueva rama
-git checkout pruebas	//posicionarnos en otra rama
-
-
-
+-master tener la última versión del proyecto. Se pueden crear ramas alternas que cumplan con el mismo objetivo para no contaminar la rama master.
+-Las ramas son muy utiles para hacer pruebas
+	git branch	//ver las ramas del repositorio
+	git branch NombreRama	//crear nueva rama
+	git checkout pruebas	//posicionarnos en otra rama
+	git merge Rama_A_Fusionar	//fusionar ramas. Nos pusicionamos en la rama con la cual queremos fusionar e indicamos el nombre de la otra rama a fusionar
+	git branch NombreRama -d	//borrar ramas
+	
 
 
 
