@@ -1,3 +1,6 @@
+Guia de GIT
+https://rogerdudler.github.io/git-guide/index.es.html
+
 INTRODUCCIÓN
 Que es GIT
 Sistema de control de versiones
@@ -72,12 +75,19 @@ Ramas
 	git branch NombreRama -d	//borrar ramas
 	
 
+GITHUB -> a Repositorio local
+Crer uno nuevo -> nombre -> descripción -> publico -> README -> licencia apache 2.0 -> crear
+Clonar un repositorio
+	Zip
+	Copiar el link en https -> cmd (abrir el folder donde copiaremos el repositorio) -> git clone <link>	//lo copia con los commits, ramas, etc
 
-
-
-
-
-
+Repositorio local -> a Github
+Crer uno nuevo -> nombre -> descripción -> publico -> README -> crear
+Copiar el código https (al momento de crear el repositorio en GitHub) -> en el bash -> colocarse en la carpeta donde esta el repositorio con cd -> git remote add origin <link>
+git remote -v		//verificar lo conectado
+git push origin master 	//subir los commits y las ramas
+git push -u origin master
+git push origin puebas	//subir los commits a una rama en especifico <nombreRama>
 
 
 
